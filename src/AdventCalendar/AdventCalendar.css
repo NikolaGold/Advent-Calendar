@@ -1,7 +1,7 @@
 .calendar-container{
 	width: 830px;
 	height: 870px;
-	background-image: url("obrazky/christmas1.png") !important;
+	background-image: url("Images/christmas1.png") !important;
 	margin-left: auto;
 	margin-right: auto;
 }
