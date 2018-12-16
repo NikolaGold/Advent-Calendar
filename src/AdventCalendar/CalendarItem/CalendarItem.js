@@ -4,11 +4,12 @@ import './CalendarItem.css';
 
 class CalendarItem extends Component{
 	render(){
-		const content = <div>{this.props.day}</div>
+		const content = this.props.item["content"];
+
 		return(
 			<button className="item-container" onClick={() => this.props.onModalClick(content)}>
 
-				<span>{this.props.day}</span>
+				<span>{this.props.item["day"]}</span>
 			
 			</button>
 		)
