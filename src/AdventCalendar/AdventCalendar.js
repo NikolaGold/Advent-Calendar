@@ -40,7 +40,6 @@ class AdventCalendar extends Component {
 		return items.map((item) => <CalendarItem key={item.day} 
 				onModalClick={(heading,content) => this.openModal(heading,content)} item={item}/>);	
 	}
-
 }
 
 export default AdventCalendar;
