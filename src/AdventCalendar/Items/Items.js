@@ -74,6 +74,6 @@
 	{day:22,
 	heading:"Den dvacátýdruhý",
 	content:"Příprava" }
-	]
+	];
 
 	export default items;

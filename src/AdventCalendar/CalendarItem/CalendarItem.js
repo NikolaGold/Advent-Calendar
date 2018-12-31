@@ -4,7 +4,7 @@ import './CalendarItem.css';
 
 class CalendarItem extends Component{
 	render(){
-		const content = this.props.item["content"];
+		const content = this.props.item.content
 		const heading = this.props.item["heading"];
 
 		return(

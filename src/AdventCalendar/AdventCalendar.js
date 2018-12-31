@@ -19,9 +19,9 @@ class AdventCalendar extends Component{
 			<div className="calendar-container">
 				{this.renderCalendarItems()}
 				{this.state.modalIsOpen && <div id="modal">
-					<button type="button" class="close" aria-label="Close" id="close" onClick={() => this.closeModal()}>x</button>
-					<h1>{this.state.headingContent}</h1>
-					<p>{this.state.modalContent}</p>
+					<button type="button" className="close" aria-label="Close" id="close" onClick={() => this.closeModal()}>x</button>
+					<h1 className="text-center">{this.state.headingContent}</h1>
+					<p className="text-center">{this.state.modalContent}</p>
 				</div>}
 			</div>
 			)
@@ -39,7 +39,7 @@ class AdventCalendar extends Component{
 	}
 
 	renderCalendarItems(){
-		return items.map((n)=> <CalendarItem onModalClick={(heading,content) => this.openModal(heading,content)} item={n}/>);
+		return items.map((item)=> <CalendarItem onModalClick={(heading,content) => this.openModal(heading,content)} item={item}/>);
 		
 	}
 
